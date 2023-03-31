@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+}
+
+.item {
+    margin: 5px;
+    flex: 1;
+}
+
+.float {
+    float: left;
+    padding-right: 2em;
+    
+}

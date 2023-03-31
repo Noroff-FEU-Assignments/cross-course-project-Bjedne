@@ -1,13 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My first website</title>
+    <title>Gamehub | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The universe of games. Get the best games at great price!">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/flexbox.css" rel="stylesheet">
+    <style>
+      .text {
+        font-family: "Aldrich", Verdana, sans-serif;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-    <h2>Web Security</h2>
-    <p id="web-security-question">How would you advise a potential client to secure his/her website from web security attacks? Note: the word count for your answer should not be greater than 250 words</p>
-    <p id="web-security-answer">I would start by advicing them to look up well-known third-party security applications. Help them look into a trustworthy application that could help protect against web security attacks through implementations of sanitization of data to avoid HTMLs with malicious script to execute. I would also advise the client to incorperate several security measures against the most popular and common types of attacks recently to increase overall security. In the end I would advise them to include the whole team working on their product to make sure that everyone are on the same page from creating, updating and testing how secure the measures are and test them out against mock attacks done by a trusted professional third-party to see how good it is and better learn how to handle a breach better.</p>
+    <header>
+      <a href="index.html"><img src="/images/logo.png" alt="Gamehub logo" class="logo left-padding"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+      <section class="whitetext container">
+        <h2>Trending games</h2>
+        <div class="gamedisplay item">
+          <h3 class="title">Space War</h3>
+          <img src="images/cover space.jpg" alt="Space War game logo" class="game-cover">
+          <p class="float">€49</p>
+          <a class="button" href="products/forge.html">View game</a>
+        </div>
+        <div class="gamedisplay item">
+          <h3 class="title">Forge Legend</h3>
+          <img src="images/cover forge.jpg" alt="Forge Legend game logo" class="game-cover">
+          <p class="float">€69</p>
+          <a class="button" href="products/forge.html">View game</a>
+        </div>
+        <div class="gamedisplay item">
+          <h3 class="title">Cyberpunk</h3>
+          <img src="images/cover cyberpunk.jpg" alt="Cyberpunk game logo" class="game-cover">
+          <p class="float">€49</p>
+          <a class="button" href="products/forge.html">View game</a>
+        </div>
+        <div class="gamedisplay item">
+          <h3 class="title">Super Duper</h3>
+          <img src="images/cover super.jpg" alt="Super Duper game logo" class="game-cover">
+          <p class="float">€49</p>
+          <a class="button" href="products/forge.html">View game</a>
+        </div>
+        <div class="gamedisplay item">
+          <h3 class="title">Boxer</h3>
+          <img src="images/cover boxer.jpg" alt="Boxer game logo" class="game-cover">
+          <p class="float">€49</p>
+          <a class="button" href="products/forge.html">View game</a>
+        </div>
+        <div class="gamedisplay item">
+          x
+        </div>
+      </section>
+      <section>
+        <img src="images/gow.jpg" alt="God of war Ragnarok" class="gow" style="width: 1240px; height: 328px; object-fit: cover;">
+      </section>
+    </main>
+      <footer>
+        <div>
+          <h3>Contact us at:</h3>
+          <p>365-24-760</p>
+          <p>support@gamehub.com</p>
+          <p>&copy;gamehub 2023</p>
+        </div>
+        <div> 
+          social media
+        </div>
+        <div>
+          payment icons
+        </div>
+    </footer>
   </body>
 </html>
