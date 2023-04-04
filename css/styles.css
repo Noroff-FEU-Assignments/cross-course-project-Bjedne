@@ -5,9 +5,17 @@
     font-weight: normal;
 }
 
+@font-face {
+    font-family: "Amethysta";
+    src: url("https://fonts.google.com/specimen/Amethysta"); format:("ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
 header,
 footer {
     background-color: rgb(187, 92, 89);
+    margin: 0px;
 }
 
 header a {
@@ -63,20 +71,12 @@ nav a:hover {
 .logo {
     max-width: 245px;
     max-height: 136px;
+    margin-top: 1em;
+    margin-left: 4em;
 }
 
 .gow {
     max-width: 80%; 
-}
-
-section{
-    margin: 3em 0;
-}
-
-.subhead {
-    max-width: 100%;
-    background-image: url("../images/snowy\ landscape.jpg");
-    background-repeat: no-repeat;
 }
 
 .whitetext {
@@ -100,11 +100,9 @@ label {
 
 .gamedisplay {
     display: inline-block;
-
 }
 
 .game-cover {
-    max-width: 190px;
     max-width: 216px;
 }
 
@@ -116,4 +114,46 @@ footer div {
 .left-padding {
     padding-left: 4em;
     padding-right: 4em;
+}
+
+.gowcontainer {
+    position: relative;
+    color: white;
+    margin-left: 4em;
+}   
+
+.gow-title {
+    text-decoration: underline;
+    text-align: left;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    font-size: 1.5em;
+}
+
+.gow-text {
+    position: absolute;
+    text-align: left;
+    top: 120px;
+    left: 70px;
+    max-width: 17%;
+    font-family: "Amethysta";
+}
+
+.gow-button {
+    position: absolute;
+    bottom: 45px;
+    left: 130px;
+    text-align: center;
+    background-color: rgba(27, 32, 61);
+    padding: 1em;
+    text-transform: uppercase;
+    font-family: "Amethysta";
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+    .gow-title, .gow-text {
+        visibility: hidden;
+    }
 }

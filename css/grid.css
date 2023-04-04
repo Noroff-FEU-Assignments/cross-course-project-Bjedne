@@ -1,0 +1,31 @@
+body {
+    display: grid;
+    grid-template-areas:
+    'header header'
+    'trending .'
+    'gamelist gamelist'
+    'gowcontainer gowcontainer'
+    'footer footer'
+}
+
+header {
+    grid-area: header;
+}
+
+.gamelist {
+    grid-area: gamelist
+}
+
+.gowcontainer {
+    grid-area: gowcontainer;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.trending {
+    grid-area: trending;
+    margin-bottom: 0px;
+    margin-left: 2em;
+}
