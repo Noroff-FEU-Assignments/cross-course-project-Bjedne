@@ -29,6 +29,7 @@ body {
     background-repeat: no-repeat;
     background-position-x: center;
     font-family: "Aldrich", Verdana, sans-serif;
+    margin: 0px;
 }
 
 nav li {
@@ -56,6 +57,7 @@ a.button {
     text-decoration: none;
     border: 1em solid rgb(252, 170, 103);
     border-radius: 1em;
+    max-height: 20px;
 }
 
 nav a:hover {

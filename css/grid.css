@@ -1,31 +1,54 @@
-body {
-    display: grid;
-    grid-template-areas:
-    'header header'
-    'trending .'
-    'gamelist gamelist'
-    'gowcontainer gowcontainer'
-    'footer footer'
-}
-
-header {
-    grid-area: header;
-}
-
-.gamelist {
-    grid-area: gamelist
-}
-
-.gowcontainer {
-    grid-area: gowcontainer;
-}
-
+/* footer style*/
 footer {
-    grid-area: footer;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    color: white; 
 }
 
-.trending {
-    grid-area: trending;
+.socials {
+    align-self: center
+}
+
+.insta {
+    margin: 0px 30px;
+}
+
+.payments {
+    align-self: center;
+}
+
+/*Trending Games Grid*/
+.gamelist {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    margin: 0em 4em;
+}
+
+.price {
+    grid-row: 2;
+    margin-top: 0px;
+    align-self: center;
+}
+
+.tag {
+    font-size: 1.5em;
+    margin-right: 1em;
+    margin-left: 0.5em;
+}
+
+.price {
+    display: flex;
+    background-color: #000;
+    max-width: 216px;
+}
+
+.blackbackground {
+    background-color:#000;
+    padding-bottom: 2em;
     margin-bottom: 0px;
-    margin-left: 2em;
 }
