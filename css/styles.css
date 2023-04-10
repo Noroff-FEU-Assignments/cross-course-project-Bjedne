@@ -12,6 +12,22 @@
     font-weight: normal;
 }
 
+ /* Global stuff */
+@media (min-width:600px) and (max-width:1200px) {
+    body {
+        font-family: "Aldrich", Verdana, sans-serif;
+    }
+    h1{
+        font-size: ;      
+    }
+    h2 {
+        font-size: ;
+    }
+    h3 {
+        font-size: ;
+    }
+}
+
 header,
 footer {
     background-color: rgb(187, 92, 89);
@@ -23,13 +39,13 @@ header a {
 }
 
 body {
-    background-color: rgba(27, 32, 61, 70);
-    background-image: url("../images/galaxy.jpg");
+    background: url("../images/galaxy.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
     font-family: "Aldrich", Verdana, sans-serif;
     margin: 0px;
+    color:#fff;
 }
 
 nav li {
@@ -58,16 +74,19 @@ a.button {
     border: 1em solid rgb(252, 170, 103);
     border-radius: 1em;
     max-height: 20px;
+    font-size: 13px;
+    align-self: center;
 }
 
-nav a:hover {
+nav a:hover,
+a.button:hover {
     text-decoration: underline;
 }
 
 .title {
     text-transform: uppercase;
     color: #fff;
-    font-size: 16px
+    font-size: 20px
 }
 
 .logo {
@@ -77,8 +96,12 @@ nav a:hover {
     margin-left: 4em;
 }
 
-.gow {
-    max-width: 80%; 
+@media (max-width:600px) {
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .whitetext {
@@ -108,20 +131,21 @@ label {
     max-width: 216px;
 }
 
-footer div {
-    display: inline-block;
-    padding: 0em 4em
-}
-
 .left-padding {
     padding-left: 4em;
     padding-right: 4em;
 }
 
+.gow {
+    object-fit: cover;
+    object-position: right;
+    max-width: 100%;
+}
 .gowcontainer {
     position: relative;
     color: white;
     margin-left: 4em;
+    max-width: 80%;
 }   
 
 .gow-title {
@@ -157,5 +181,134 @@ footer div {
 @media only screen and (max-width: 600px) {
     .gow-title, .gow-text {
         visibility: hidden;
+    }
+}
+
+
+
+/* Forge Legend product */
+    /* All Devices */
+    img {
+        height: auto;
+        max-width: 90%;
+        display: block;
+        margin: 1em auto 1em auto;
+    }
+
+    /* Mobile FL */
+@media (max-width: 600px) {
+    h1,
+    button {
+        font-size: 32px;
+        margin: 1em;
+    }
+
+    p {
+        font-size: 20px;
+        margin: 1em;
+    }
+
+    .euro {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 0px;
+    }
+
+    button {
+        font-family: "Aldrich", Verdana, Geneva, Tahoma, sans-serif;
+        background-color: rgb(252, 170, 103);
+        border-radius: 1em;
+        text-transform: uppercase;
+        padding: 0.7em;
+        margin-top: 5px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bg {
+        background-color: rgb(00,00,00,0.6);
+        padding: 0.2em 0px;
+        margin: 0x 1em;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width:600px) and (max-width:1200px) {
+    button {
+        font-family: "Aldrich", Verdana, Geneva, Tahoma, sans-serif;
+        background-color: rgb(252, 170, 103);
+        border-radius: 1em;
+        text-transform: uppercase;
+        padding: 1em;
+        display: block;
+        margin: 5px auto 2em auto;
+        font-size: 22px;
+    }
+
+    .euro {
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 0em;
+    }
+}
+
+
+
+
+
+
+/* footer styles*/
+footer {
+    display: grid;
+    grid-template-areas: 
+    "text . socials"
+    "text . payments";
+    grid-row-gap: 1em;
+    color: white;
+    font-family: "Aldrich", Verdana, sans-serif;
+}
+
+.socials {
+    justify-self: center;
+    grid-area: socials;
+    display: flex;
+    margin-top: 1em;
+}
+
+.payments {
+    justify-self: center;
+    grid-area: payments;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.text {
+    grid-area: text;
+    margin-left: 1em;
+}
+
+.payments i,
+.socials i {
+    padding: 13px;
+}
+
+    /* footer tablet */
+@media (min-width:600px) and (max-width:1200px) {
+    h3 {
+        font-size: ;
+    }
+
+    .text p {
+        font-size: 18px;
+    }
+
+    .payments i,
+    .socials i {
+        padding: 20px;
     }
 }

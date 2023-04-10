@@ -1,37 +1,80 @@
-/* footer style*/
 footer {
     display: grid;
-    position: relative;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    color: white; 
-}
-
-.socials {
-    align-self: center
+    grid-template-areas: 
+    "text . socials"
+    "text . payments";
+    grid-row-gap: 1em;
+    color: white;
 }
 
 .insta {
-    margin: 0px 30px;
+    margin: 0px 15px;
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+    .gamelist {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        margin: 0em 1em 1em;
+    }
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+    .gamelist {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin: 0em 1em 1em;
+    }
+}
+
+@media (min-width: 1200px) {
+    h3 {
+        font-size: 25px;
+        margin-bottom: 0px;
+    }
+    
+    footer p {
+        font-size: 16px;
+    }
+}
+
+/* footer style*/
+.socials {
+    justify-self: center;
+    grid-area: socials;
+    display: flex;
+    margin-top: 1em;
 }
 
 .payments {
-    align-self: center;
+    justify-self: center;
+    grid-area: payments;
+    display: flex;
+    margin-bottom: 1em;
 }
 
+.text {grid-area: text;}
+
 /*Trending Games Grid*/
-.gamelist {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto auto;
-    grid-column-gap: 10px;
-    grid-row-gap: 0px;
-    margin: 0em 4em;
+@media (min-width: 1200px) {
+    .gamelist {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+        margin: 0em 4em;
+    }
 }
 
 .price {
     grid-row: 2;
-    margin-top: 0px;
     align-self: center;
 }
 
@@ -43,12 +86,10 @@ footer {
 
 .price {
     display: flex;
-    background-color: #000;
     max-width: 216px;
+    background-color: black; 
 }
 
-.blackbackground {
-    background-color:#000;
-    padding-bottom: 2em;
+.game-cover {
     margin-bottom: 0px;
 }
