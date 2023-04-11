@@ -79,7 +79,6 @@ footer {
 /* mobile style*/
 @media (max-width: 600px) {
     .new {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto repeat(3, 1fr);
         margin: 0em 1em 1em;
