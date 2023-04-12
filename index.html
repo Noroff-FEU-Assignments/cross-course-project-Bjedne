@@ -7,6 +7,7 @@
     <meta name="description" content="The universe of games. Get the best games at the best price!">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/060d8d4ef0.js" crossorigin="anonymous"></script>
     <style>
       .text {
         font-family: "Aldrich", Verdana, sans-serif;
@@ -15,16 +16,27 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="/images/logo.png" alt="Gamehub logo" class="logo"></a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="games.html">Games</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact us</a></li>
-        </ul>
-      </nav>
-    </header>
+      <a href="../index.html"><img src="/images/logo.png" alt="Gamehub logo" class="logo"></a>
+      <div class="dropdown">
+        <input type="checkbox" id="checkbox_toggle">
+        <label for="checkbox_toggle" class="hamburger">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+         </label>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../games.html">Games</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact us</a></li>
+            <li><a href="../cart.html" class="nav-cart">My cart</a></li>
+          </ul>
+        </nav>
+        <div class="shopping-cart">
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-2xl" alt="my cart"></i></a>
+        </div>
+  </header>
       <h2 class="trending">Trending games</h2>
       <section class="whitetext gamelist">
         <div>
