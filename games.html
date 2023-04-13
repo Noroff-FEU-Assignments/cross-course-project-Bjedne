@@ -11,34 +11,45 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="/images/logo.png" alt="Gamehub logo" class="logo"></a>
-      <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact us</a></li>
-        </ul>
-      </nav>
-    </header>
+      <a href="../index.html"><img src="/images/logo.png" alt="Gamehub logo" class="logo"></a>
+      <div class="dropdown">
+        <input type="checkbox" id="checkbox_toggle">
+        <label for="checkbox_toggle" class="hamburger">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+         </label>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../games.html">Games</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact us</a></li>
+            <li><a href="../cart.html" class="nav-cart">My cart</a></li>
+          </ul>
+        </nav>
+        <div class="shopping-cart">
+          <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-2xl" alt="my cart"></i></a>
+        </div>
+  </header>
     <main>
       <section class="new">
         <h2>new releases</h2>
-        <img src="images/cover forge.jpg" alt="Forge Legend Cover" class="gc">
-        <img src="images/cover black.jpg" alt="Black Cover" class="gc">
-        <img src="images/cover cyberpunk.jpg" alt="Cyberpunk Cover" class="gc">
-        <img src="images/cover furious.jpg" alt="Furious Cover" class="gc">
-        <img src="images/cover racing.jpg" alt="Racing Cover" class="gc">
-        <img src="images/cover space.jpg" alt="Space Wars Cover" class="gc">
+        <img src="images/cover_forge.jpg" alt="Forge Legend Cover" class="gc">
+        <img src="images/cover_black.jpg" alt="Black Cover" class="gc">
+        <img src="images/cover_cyberpunk.jpg" alt="Cyberpunk Cover" class="gc">
+        <img src="images/cover_furious.jpg" alt="Furious Cover" class="gc">
+        <img src="images/cover_racing.jpg" alt="Racing Cover" class="gc">
+        <img src="images/cover_space.jpg" alt="Space Wars Cover" class="gc">
       </section>
       <section class="best">
         <h2>best sellers</h2>
-        <img src="images/cover assassin.jpg">
-        <img src="images/cover forge.jpg">
-        <img src="images/cover space.jpg">
-        <img src="images/cover black.jpg">
-        <img src="images/cover furious.jpg">
-        <img src="images/cover racing.jpg">
+        <img src="images/cover_assassin.jpg">
+        <img src="images/cover_forge.jpg">
+        <img src="images/cover_space.jpg">
+        <img src="images/cover_black.jpg">
+        <img src="images/cover_furious.jpg">
+        <img src="images/cover_racing.jpg">
       </section>
       <section class="genre">
           <p class="genre-button">Action</p>
