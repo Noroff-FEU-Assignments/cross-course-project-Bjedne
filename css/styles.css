@@ -578,3 +578,117 @@ nav li a {
     visibility: hidden;
   }
 }
+
+/* GAMES STYLES */
+.new,
+.best,
+.games-title h1 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-offset: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.new img,
+.best img {
+    max-width: 100%;
+}
+
+.genre-button {
+    font-family: "Aldrich", Verdana, sans-serif;
+    text-transform: uppercase;
+    background-color: rgb(187, 92, 89);
+    text-decoration: none;
+    border: 2em solid rgb(187, 92, 89);
+    border-radius: 0.75em;
+    text-align: center;
+    font-size: 1em;
+}
+
+.genre-button:hover {
+    border-color: rgb(167, 63, 60);
+    background-color: rgb(167, 63, 60);
+}
+
+.genre {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+    margin: 0em 1em;
+}
+
+.genre-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    margin: 0em 1em;
+    grid-gap: 5px;
+}
+
+    /* GAMES MOBILE STYLES*/
+@media (max-width: 600px) {
+    .games-title h1 {
+        text-align: center;
+    }
+}
+
+    /* GAMES TABLET STYLES */
+@media (min-width: 600px) and (max-width: 1000px) {
+    .games-title h1 {
+        text-align: center;
+    }
+
+    .new {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        max-width: 100%;
+        margin: 0em 1em 1em;
+    }
+
+    .best {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        max-width: 100%;
+        margin: 0em 1em 2em;
+    }
+
+    .new img,
+    .best img {
+        max-width: 70%;
+    }
+
+    .genre {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
+
+    .genre-2 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 5px;
+    }
+}
+
+    /* GAMES DESKTOP STYLES */
+ @media (min-width: 1000px) {
+    .new,
+    .best {
+        flex-direction: row;
+        grid-gap: 10px;
+        justify-content: space-between;
+        margin: 2em 10%;
+    }
+
+    .genre,
+    .genre-2 {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 5px;
+        margin: 0em 10%;
+    }
+ }
