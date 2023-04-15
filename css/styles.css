@@ -12,7 +12,7 @@
     font-weight: normal;
 }
 
- /* Global stuff */
+ /* GLOBAL FONT SIZES */
  @media (max-width: 600px) {
     h1 {font-size: 32px;}
     h2 {font-size: 22px;}
@@ -34,7 +34,7 @@
     p {font-size: 20px;}
 }
 
-/* Global CSS */
+/* Global CSS STYLES */
 header,
 footer {
     background-color: rgb(187, 92, 89);
@@ -57,7 +57,7 @@ body {
     color:#fff;
 }
 
-/* index page */
+/* INDEX STYLES */
 a.button {
     font-family: "Aldrich", Verdana, sans-serif;
     text-transform: uppercase;
@@ -69,6 +69,13 @@ a.button {
     max-height: 20px;
     font-size: 16px;
     align-self: center;
+}
+
+.gamelist img {
+    height: auto;
+    max-width: 90%;
+    display: block;
+    margin: 1em auto 1em auto;
 }
 
 .trending,
@@ -102,7 +109,11 @@ a.button {
     text-transform: uppercase;
 }
 
-.gow {
+.gowcontainer img {
+    height: auto;
+    max-width: 90%;
+    display: block;
+    margin: 1em auto 1em auto;
     object-fit: cover;
     width: 1240px;
     height: 328px;
@@ -113,7 +124,7 @@ a.button {
     right: 55px;
 }
 
-    /* index mobile */
+    /* INDEX MOBILE STYLES */
 @media (max-width: 600px) {
     .gamelist {
         display: flex;
@@ -132,7 +143,7 @@ a.button {
     }
 }
 
-    /* index tablet */
+    /* INDEX TABLET STYLES */
 @media (min-width:600px) and (max-width:1000px) {
     nav li a {
         font-size: 35px;
@@ -169,7 +180,7 @@ a.button {
     }
 }
 
-    /* index desktop */
+    /* INDEX DESKTOP STYLES */
 @media (min-width:1000px) {
     .gamelist {
         display: grid;
@@ -219,6 +230,7 @@ a.button {
         width: 1720px;
  }
 }
+
 .logo {
     max-width: 245px;
     max-height: 136px;
@@ -248,53 +260,52 @@ a.button {
     max-height: auto;
 }
 
-/* Forge Legend product */
-    /* All Devices */
-    img {
-        height: auto;
-        max-width: 90%;
-        display: block;
-        margin: 1em auto 1em auto;
-    }
+/* FORGE LEGEND STYLES*/
+.forge-legend img {
+    height: auto;
+    max-width: 90%;
+    display: block;
+    margin: 1em auto 1em auto;
+}
 
-    h1,
-    .description p {
-        margin: 1em;
-        line-height: 1.3;
-    }
+.fl-title h1,
+.description p {
+    margin: 1em;
+    line-height: 1.3;
+}
 
-    .euro {
-        text-align: center;
-        font-size: 45px;
-        margin-bottom: 0px;
-    }
+.euro {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 0px;
+}
 
-    button {
-        font-family: "Aldrich", Verdana, Geneva, Tahoma, sans-serif;
-        background-color: rgb(252, 170, 103);
-        border-radius: 1em;
-        text-transform: uppercase;
-        padding: 0.7em;
-        display: block;
-        margin: 5px auto 2em auto;
-    }
+button {
+    font-family: "Aldrich", Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(252, 170, 103);
+    border-radius: 1em;
+    text-transform: uppercase;
+    padding: 0.7em;
+    display: block;
+    margin: 5px auto 2em auto;
+}
 
-    .bg {
-        background-color: rgb(00,00,00,0.6);
-        padding: 0.2em 0px;
-        margin: 0x 1em;
-    }
+.bg {
+    background-color: rgb(00,00,00,0.6);
+    padding: 0.2em 0px;
+    margin: 0x 1em;
+}
 
-    /* Mobile FL */
+    /* FORGE LEGEND MOBILE STYLES */
 @media (max-width: 600px) {
     footer p {
         font-size: 12px;
     }
 }
 
-    /* Tablet FL */ 
+    /* FORGE LEGEND TABLET STYLES */ 
 @media (min-width:600px) and (max-width:1200px) {
-    h1,
+    .fl-title h1,
     p {
         margin: 5%;
         line-height: 1.5;
@@ -307,7 +318,7 @@ a.button {
     }
 }
 
-    /* Desktop FL */
+    /* FORGE LEGEND DESKTOP STYLES */
 @media (min-width:1200px) {
     .desktop-fl {
         display: grid;
@@ -322,7 +333,7 @@ a.button {
         margin-top: 4em;
     }
 
-    h1,
+    .fl-title h1,
     p {
         margin-left: 10%;
         margin-right: 10%;
@@ -340,12 +351,7 @@ a.button {
     }
 }
 
-
-
-
-
-
-/* FOOTER STYLING */
+/* FOOTER STYLES */
 footer {
     display: grid;
     grid-template-areas: 
@@ -389,7 +395,7 @@ footer {
     padding: 13px;
 }
 
-    /* footer tablet */
+    /* FOOTER TABLET STYLES */
 @media (min-width:600px) and (max-width:1200px) {
     
     .text p {
@@ -407,7 +413,7 @@ footer {
     }
 }
 
-    /* footer desktop */
+    /* FOOTER DESKTOP STYLES */
 @media (min-width:1200px) {
     .socials i {
         font-size: 1.5em;
@@ -429,7 +435,7 @@ footer {
     }
 }
 
-/* HEADER STYLING */
+/* HEADER STYLES */
 @media (max-width:600px) {
     nav li a {
         font-size: 24px;
@@ -474,14 +480,14 @@ footer {
     }
 }
 
-    /* nav */
+    /* NAV STYLES */
 nav li a {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-    /* hamburger menu nav */
+    /* NAV HAMBURGER MENU STYLES */
     /* Associated HTML and CSS by: Dan Powell at "https://codepen.io/bloom-dan/pen/vKdoaM" 12/04/23 */
  input[type=checkbox] {
     display: none;
@@ -588,6 +594,11 @@ nav li a {
     text-underline-offset: 20px;
     display: flex;
     flex-direction: column;
+}
+
+.games-title h1 {
+    font-size: 40px;
+    margin-left: 3.5em;
 }
 
 .new img,
@@ -709,6 +720,7 @@ nav li a {
 
  .about h1 {
     justify-self: center;
+    margin-left: 2em;
  }
 
  @media (min-width: 1000px) {
@@ -736,7 +748,7 @@ nav li a {
 }
 
 fieldset {
-    background-color: rgba(27, 32, 61, 0.8);
+    background-color: rgb(187, 92, 89);
     border-color: rgba(27, 32, 61, 0.8);
     border-radius: 2em;
     margin: 2em 5%;
@@ -777,6 +789,49 @@ fieldset {
     }
 
     .contact-info {
-        margin: 4em 8em 4em 8em;
+        margin: 4em 16em 4em 10em;
     }
+}
+
+/* MY CART STYLES */
+.progress-bar {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.progress-1 {
+    background-color: rgb(187, 92, 89);
+    padding: 20px 34.93px;
+}
+
+.progress-2 {
+    background-color: rgba(27, 32, 61);
+    padding: 20px 29.49px;
+}
+
+.progress-3 {
+    background-color: rgba(27, 32, 61);
+    padding: 20px 30px;
+}
+
+    /* MY CART TABLET STYLES */
+@media (min-width: 600px) and (max-width: 1000px) {
+
+}
+
+.cart-items {
+    background-color: rgb(187, 92, 89);
+    padding: 1em;
+    border-radius: 2em;
+    text-transform: uppercase;
+}
+
+.cart-items h1 {
+    margin-left: 1em;
+}
+
+.cart-items img {
+    height: auto;
+    width: 107px;
 }
