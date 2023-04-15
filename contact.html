@@ -32,27 +32,44 @@
           <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-2xl" alt="my cart"></i></a>
         </div>
   </header>
-    <main>
-      <section>
-        <h2>Contact us:</h2>
-        <h3 class="whitetext">Phone number:</h3>
-        <h3 class="whitetext">365-24-760</h3>
-        <h3 class="whitetext">E-mail:</h3>
-        <h3 class="whitetext">support@gamehub.com</h3>
+    <main class="contact">
+      <section class="contact-info">
+        <h1>Contact us:</h1>
+        <h2 class="whitetext">Phone number:</h2>
+        <h2 class="whitetext">365-24-760</h2>
+        <h2 class="whitetext">E-mail:</h2>
+        <h2 class="whitetext">support@gamehub.com</h2>
       </section>
-      <section>
+      <section class="contact-form">
          <fieldset>
           <h2>Done with your game?</h2>
           <h2>Fill this form and sell it to us!</h2>
           <label for="firstname">Your name</label>
-          <input type="text" name="firstname" id="firstname" class="form__input" required>
+          <input type="text" name="firstname" id="firstname" class="form__input form-1" required>
           <label for="email">Your e-mail</label>
-          <input type="email" name="email" id="email" class="form__input" required>
+          <input type="email" name="email" id="email" class="form__input form-2" required>
           <label for="message">Tell us which game(s) you want to sell</label>
-          <input type="text" name="message" id="message" class="form__input" required>
-          <input type="submit" value="SUBMIT">
+          <textarea class="form__input form-3" required></textarea>
+          <button class="contact-submit">submit</button>
         </fieldset>
       </section>
-      </main>
+    </main>
+    <footer>
+      <div class="text">
+        <h3>Contact us at:</h3>
+        <p>365-24-760</p>
+        <p>support@gamehub.com</p>
+        <p>&copy;gamehub 2023</p>
+      </div>
+      <div class="socials"> 
+        <p><i class="fa-brands fa-facebook fa-xl"></i>Facebook</p>
+        <p><i class="fa-brands fa-instagram fa-xl"></i>Instagram</p>
+      </div>
+      <div class="payments">
+        <i class="fa-brands fa-paypal fa-2xl"></i>
+        <i class="fa-brands fa-cc-visa fa-2xl"></i>
+        <i class="fa-brands fa-cc-mastercard fa-2xl"></i>
+      </div>
+    </footer>
   </body>
 </html>

@@ -632,6 +632,11 @@ nav li a {
     .games-title h1 {
         text-align: center;
     }
+
+    .new img,
+    .best img {
+    width: 80%;
+}
 }
 
     /* GAMES TABLET STYLES */
@@ -692,3 +697,86 @@ nav li a {
         margin: 0em 10%;
     }
  }
+
+ /* ABOUT STYLES */
+ .about {
+    margin: 5% 5%;
+    background-color: rgba(27, 32, 61, 0.9);
+    padding: 2em 2em;
+    border-radius: 4em;
+    line-height: 1.5;
+ }
+
+ .about h1 {
+    justify-self: center;
+ }
+
+ @media (min-width: 1000px) {
+    .about{
+        padding-top: 3%;
+        padding-bottom: 5%;
+    }
+ }
+
+ /* CONTACT STYLES */
+.contact {
+    background-color: rgba(27, 32, 61, 0.8);
+    margin-top: 2em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+ .contact-info {
+    place-content: center;
+    text-align: center;
+}
+
+.contact-form h2 {
+    text-align: center;
+}
+
+fieldset {
+    background-color: rgba(27, 32, 61, 0.8);
+    border-color: rgba(27, 32, 61, 0.8);
+    border-radius: 2em;
+    margin: 2em 5%;
+}
+
+.form-1,
+.form-2 {
+    padding: 10px;
+    width: 80%;
+}
+
+.form-3 {
+    padding: 10px 0px 40px 10px;
+    width: 82%;
+}
+
+.form-1,
+.form-2,
+.form-3 {
+    margin-bottom: 2em;
+    margin-left: 1em;
+    border-radius: 0.5em;
+    font-family: "Amethysta", Verdana, sans-serif;
+}
+
+.contact-submit {
+    font-size: 25px;
+    margin-bottom: 1em;
+}
+
+.contact-form label {
+    margin-left: 1em;
+}
+
+@media (min-width: 1000px) {
+    .contact {
+        display: flex;
+    }
+
+    .contact-info {
+        margin: 4em 8em 4em 8em;
+    }
+}
