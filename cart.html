@@ -28,10 +28,11 @@
           <li><a href="../cart.html" class="nav-cart">My cart</a></li>
         </ul>
       </nav>
-      <div class="shopping-cart">
-        <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-2xl" alt="my cart"></i></a>
-      </div>
-</header>
+    </div>
+    <div class="shopping-cart">
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-2xl" alt="my cart"></i></a>
+    </div>
+  </header>
     <main>
         <section class="progress-bar">
             <h1 class="progress-1">1</h1>
@@ -39,21 +40,20 @@
             <h1 class="progress-3">3</h1>
         </section>
         <section class="cart-items">
-            <h1>my cart</h1>
-            <img src="images/cover_forge.jpg">
-            <h2>Forge Legend</h2>
-            <p>Playbox</p>
+            <h1 class="cart-object">my cart</h1>
+            <img src="images/cover_forge.jpg" alt="Forge Legend Game" class="cart-object">
+            <h2 class="cart-object">Forge Legend</h2>
+            <label for="1" class="cart-object">Quantity:</label>
+            <input type="text" name="quantity" value="1" class="cart-object">
         </section>
-        <section>
-            <h3>Coupon code:</h3>
-            <h3>L33TG4M3R5</h3>
+        <section class="cart-price">
+          <p class="cart-1">1x Forge Legend</p>
+          <p>€69</p>
+          <div class="cart-line"></div>
+          <p class="cart-2">Sum total:</p>
+          <p>€69</p>
         </section>
-        <section>
-            <p>1x Forge Legend €69</p>
-            <p>Discount Code -40%</p>
-            <p>Sum total: €41</p>
-            <a href="payment.html"><button>Checkout</button></a>
-        </section>
+        <a href="payment.html"><button class="cart-button">Checkout</button></a>
     </main>
     <footer>
         <div class="text">
