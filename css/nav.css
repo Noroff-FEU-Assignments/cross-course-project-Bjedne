@@ -434,83 +434,7 @@ footer {
     }
 }
 
-/* HEADER STYLES */
-ul {
-    list-style: none;
-}
 
-.fas,
-nav li a {
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: 35px;
-    line-height: 1.7;
-}
-
-@media (max-width:600px) {
-    .fas,
-    nav li a {
-        font-size: 25px;
-    }
-}
-
-@media (max-width: 1200px) {
-    nav,
-    #checkbox_toggle,
-    .shopping-cart {
-        display: none;
-    }
-
-    #checkbox_toggle:checked ~ nav {
-        display: block;
-    }
-
-    .dropdown {
-        position: relative;
-        left: 7.5%;
-    }
-}
-
-@media (min-width:1200px) {
-    header {
-        display: flex;
-        position: relative;
-    }
-    
-    nav {
-        position: absolute;
-        top: 30%;
-        left: 25%;
-    }
-
-    nav ul li {
-        display: inline-block;
-        padding: 1em;
-    }
-    
-    nav li a {
-        font-size: 30px;
-    }
-
-    .shopping-cart a {
-        position: absolute;
-        top: 50%;
-        right: 10%;
-        color: #fff;
-        margin-left: 1em;
-    }
-
-    .shopping-cart a:hover {
-        color: rgba(27, 32, 61);
-    }
-
-    .nav-cart,
-    .fas,
-    #checkbox_toggle {
-        display: none;
-    }
-}
 
 /* GAMES STYLES */
 .new,
@@ -784,4 +708,88 @@ fieldset {
 .cart-items img {
     height: auto;
     width: 107px;
+}
+
+
+
+
+
+
+
+/* HEADER STYLES */
+ul {
+    list-style: none;
+}
+
+.fas,
+nav li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 35px;
+    line-height: 1.7;
+}
+
+@media (max-width:600px) {
+    .fas,
+    nav li a {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+    nav,
+    #checkbox_toggle,
+    .shopping-cart {
+        display: none;
+    }
+
+    #checkbox_toggle:checked ~ nav {
+        display: block;
+    }
+
+    .dropdown {
+        position: relative;
+        left: 7.5%;
+    }
+}
+
+@media (min-width:1200px) {
+    header {
+        display: flex;
+        position: relative;
+    }
+    
+    nav {
+        position: absolute;
+        top: 30%;
+        left: 25%;
+    }
+
+    nav ul li {
+        display: inline-block;
+        padding: 1em;
+    }
+    
+    nav li a {
+        font-size: 30px;
+    }
+
+    .shopping-cart a {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        color: #fff;
+        margin-left: 1em;
+    }
+
+    .shopping-cart a:hover {
+        color: rgba(27, 32, 61);
+    }
+
+    .nav-cart,
+    .fas,
+    #checkbox_toggle {
+        display: none;
+    }
 }
