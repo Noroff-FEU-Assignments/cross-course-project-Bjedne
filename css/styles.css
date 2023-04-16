@@ -304,6 +304,11 @@ a.index-button {
     footer p {
         font-size: 12px;
     }
+
+    .description {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
 }
 
     /* FORGE LEGEND TABLET STYLES */ 
@@ -744,15 +749,12 @@ nav li a {
 @media (min-width: 1000px) {
     .contact {
         display: flex;
+        justify-content: space-evenly;
     }
 
     .contact-info {
         margin-left: 10%;
         margin-top: 10%;
-    }
-
-    .contact-form fieldset {
-        place-content: right;
     }
 }
 
