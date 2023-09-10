@@ -7,8 +7,6 @@ const params = new URLSearchParams(queryString);
 
 const id = params.get("id");
 
-console.log(id);
-
 async function forgeLegendInfo() {
     const urlFL = "https://api.noroff.dev/api/v1/gamehub/" + id;
     const corsEnabledUrl = "https://noroffcors.onrender.com/" + urlFL;
@@ -40,7 +38,13 @@ async function productDetails() {
         
     }catch(error) {
         console.log("Something is wrong here!");
+        productInfo.innerHTML = message("There was an error loading your product");
 }
 } 
 
+if (!id) {
+    productImg.innerHTML = `<div class="error">No image was found</div>`;
+    productInfo.innerHTML = `<div class="error">No product was found</div>`;
+}else {
 productDetails();
+}

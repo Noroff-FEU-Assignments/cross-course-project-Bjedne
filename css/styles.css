@@ -39,9 +39,14 @@ h1 {
     text-transform: uppercase;
 }
 
+.error {
+    margin: 30% auto;
+    font-size: 2em;
+    text-align: center;
+}
 .loading-indicator {
     border: 16px solid #f3f3f3; 
-    border-top: 16px solid #3498db; 
+    border-top: 16px solid rgb(187, 92, 89); 
     border-radius: 50%;
     width: 120px;
     height: 120px;
