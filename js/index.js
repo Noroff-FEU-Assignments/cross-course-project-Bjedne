@@ -8,7 +8,7 @@ indexProdContainer.innerHTML = `<div class="loading-indicator">`
 async function fetchIndexProducts() {
 
     try {
-    const response = await fetch(corsEnabledUrl);
+    const response = await fetch(url);
     const results = await response.json();
 
     console.log(results);

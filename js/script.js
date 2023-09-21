@@ -11,7 +11,7 @@ async function forgeLegendInfo() {
     const urlFL = "https://api.noroff.dev/api/v1/gamehub/" + id;
     const corsEnabledUrl = "https://noroffcors.onrender.com/" + urlFL;
 
-    const response = await fetch(corsEnabledUrl);
+    const response = await fetch(urlFL);
     const results = await response.json();
     return results;
 }
