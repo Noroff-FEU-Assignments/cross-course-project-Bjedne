@@ -1,6 +1,7 @@
 const productInfo = document.querySelector(".prodinf");
 const productImg = document.querySelector(".prodimg");
 
+
 const queryString = document.location.search;
 
 const params = new URLSearchParams(queryString);
@@ -18,6 +19,7 @@ async function forgeLegendInfo() {
 
 productInfo.innerHTML = `<div class="loading-indicator"></div>`;
 
+
 async function productDetails() {
     try {
         const specProd = await forgeLegendInfo();
@@ -33,14 +35,14 @@ async function productDetails() {
                                      <p class="euro">€${specProd.price}</p>
                                 </div>
                                 <div>
-                                    <button class="forge-button">Add to cart</button>
-                                </div>`;
-        
+                                    <button class="forge-button add-cart">Add to cart</button>
+                                </div>`;                       
     }catch(error) {
         console.log("Something is wrong here!");
         productInfo.innerHTML = message("There was an error loading your product");
 }
 } 
+
 
 if (!id) {
     productImg.innerHTML = `<div class="error">No image was found</div>`;
@@ -48,3 +50,4 @@ if (!id) {
 }else {
 productDetails();
 }
+

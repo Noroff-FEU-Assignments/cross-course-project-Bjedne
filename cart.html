@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Look over the current items in your cart and check out">
+    <script src="js/store.js" defer></script>
     <link href="css/styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/060d8d4ef0.js" crossorigin="anonymous"></script>
     <!-- Hotjar Tracking Code for https://vermillion-marigold-c48929.netlify.app/ -->
@@ -49,19 +50,26 @@
             <h1 class="progress-2b">2</h1>
             <h1 class="progress-3b">3</h1>
         </section>
-        <section class="cart-items">
-            <h1 class="cart-object">my cart</h1>
+        <section class="my-cart">
+          <h1 class="cart-object">my cart</h1>
+          <section class="cart-items">
             <img src="images/cover_forge.jpg" alt="Forge Legend Game" class="cart-object">
             <h2 class="cart-object">Forge Legend</h2>
-            <label for="1" class="cart-object">Quantity:
-            <input type="text" name="quantity" value="1" id="1" class="cart-object"></label>
-        </section>
+            <input type="number" name="quantity" value="2" class="cart-object cart-quantity">
+            <h3 class="my-cart-price">$69</h3>
+            <p class="remove-button">Remove</p>
+          </section>
+          <section class="cart-items">
+            <img src="images/cover_forge.jpg" alt="Forge Legend Game" class="cart-object">
+            <h2 class="cart-object">Forge Legend</h2>
+            <input type="number" name="quantity" value="1" class="cart-object cart-quantity">
+            <h3 class="my-cart-price">$69</h3>
+            <p class="remove-button">Remove</p>
+          </section>
+      </section>
         <section class="cart-price">
-          <p class="cart-1">1x Forge Legend</p>
-          <p>€69</p>
-          <div class="cart-line"></div>
           <p class="cart-2">Sum total:</p>
-          <p>€69</p>
+          <p class="cart-total-price">$0</p>
         </section>
         <a href="payment.html"><button class="cart-button">Checkout</button></a>
     </main>
