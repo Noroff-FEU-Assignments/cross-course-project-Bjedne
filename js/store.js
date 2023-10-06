@@ -1,15 +1,10 @@
-let carts = productInfo.getElementsByClassName("add-cart");
-console.log(carts);
-
-for(let i = 0; i < carts.length; i++) {
-    console.log("my loop is working");
-}
-
 if (document.readyState == "loading") {
     document.addEventListener("DOMContentLoaded", ready)
 } else {
     ready()
 }
+
+
 
 function ready() {
     var removeCartItemButtons = document.getElementsByClassName("remove-button")
@@ -49,10 +44,11 @@ function updateCartTotal() {
             var quantityElement = cartRow.getElementsByClassName("cart-quantity")[0]
             var price = parseFloat(priceElement.innerText.replace("$", ""))
             var quantity = quantityElement.value
-            total =total + (price * quantity)
+            total = total + (price * quantity)
     }
     document.getElementsByClassName("cart-total-price")[0].innerText = "$" + total
 }
+
 
 
 

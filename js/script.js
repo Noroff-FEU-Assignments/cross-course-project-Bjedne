@@ -36,7 +36,68 @@ async function productDetails() {
                                 </div>
                                 <div>
                                     <button class="forge-button add-cart">Add to cart</button>
-                                </div>`;                       
+                                </div>`;   
+    let carts = productInfo.querySelector(".add-cart");
+
+    carts.addEventListener("click", () => {
+        cartNumbers(specProd);
+        alert("Item added to cart");
+    })
+
+    function onLoadCartNumbers() {
+        let productNumbers = localStorage.getItem("cartNumbers");
+
+        if(productNumbers) {
+            document.querySelector(".shopping-cart span").textContent = productNumbers;
+        }
+    }
+
+    function cartNumbers(specProd) {
+        let productNumbers = localStorage.getItem("cartNumbers");
+        
+        productNumbers = parseInt(productNumbers);
+
+        if ( productNumbers ) {
+            localStorage.setItem("cartNumbers", productNumbers + 1);
+            document.querySelector(".shopping-cart span").textContent = productNumbers + 1;
+        } else {
+            localStorage.setItem("cartNumbers", 1);
+            document.querySelector(".shopping-cart span").textContent = 1;
+        }
+
+        setItems(specProd);
+    }
+
+    function setItems(specProd) {
+        let cartItems = localStorage.getItem("productsInCart");
+        cartItems = JSON.parse(cartItems);
+
+        if (cartItems != null) {
+            if (cartItems[specProd.title] == undefined) {
+                cartItems = {
+                    ...cartItems,
+                    [specProd.title]: specProd
+                }
+            }
+            cartItems[specProd.title].inCart += 1;
+        } else {
+            specProd.inCart = 1;
+            cartItems = {
+                [specProd.title]: specProd
+            }
+        }
+        cartItems != null ? cartItems = {
+            ...cartItems,
+            [specProd.title]: specProd
+        } : {
+            [specProd.title]: specProd
+        }
+
+        localStorage.setItem("productsInCart", JSON.stringify(specProd));
+    }
+    onLoadCartNumbers();
+
+
     }catch(error) {
         console.log("Something is wrong here!");
         productInfo.innerHTML = message("There was an error loading your product");
