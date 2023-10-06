@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gamehub | My Cart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Look over the current items in your cart and check out">
+    <script src="js/store.js" defer></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/060d8d4ef0.js" crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for https://vermillion-marigold-c48929.netlify.app/ -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3659980,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+</head>
+<body>
+  <header>
+    <a href="../index.html"><img src="/images/logo.png" alt="Gamehub logo" class="logo"></a>
+    <div class="dropdown">
+      <input type="checkbox" id="checkbox_toggle">
+      <label for="checkbox_toggle"><i class="fas fa-bars"></i></label>
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../games.html">Games</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact us</a></li>
+          <li><a href="../cart.html" class="nav-cart">My cart</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="shopping-cart">
+      <a href="cart.html"><i class="fa-solid fa-cart-shopping fa-2xl"></i></a>
+    </div>
+  </header>
+    <main>
+        <section class="progress-bar">
+            <h1 class="progress-1a">1</h1>
+            <h1 class="progress-2b">2</h1>
+            <h1 class="progress-3b">3</h1>
+        </section>
+        <section class="my-cart">
+          <h1 class="cart-object">my cart</h1>
+          <section class="cart-items">
+            <img src="images/cover_forge.jpg" alt="Forge Legend Game" class="cart-object">
+            <h2 class="cart-object">Forge Legend</h2>
+            <input type="number" name="quantity" value="2" class="cart-object cart-quantity">
+            <h3 class="my-cart-price">$69</h3>
+            <p class="remove-button">Remove</p>
+          </section>
+          <section class="cart-items">
+            <img src="images/cover_forge.jpg" alt="Forge Legend Game" class="cart-object">
+            <h2 class="cart-object">Forge Legend</h2>
+            <input type="number" name="quantity" value="1" class="cart-object cart-quantity">
+            <h3 class="my-cart-price">$69</h3>
+            <p class="remove-button">Remove</p>
+          </section>
+      </section>
+        <section class="cart-price">
+          <p class="cart-2">Sum total:</p>
+          <p class="cart-total-price">$0</p>
+        </section>
+        <a href="payment.html"><button class="cart-button">Checkout</button></a>
+    </main>
+    <footer>
+        <div class="text">
+          <h3>Contact us at:</h3>
+          <p>365-24-760</p>
+          <p>support@gamehub.com</p>
+          <p>&copy;gamehub 2023</p>
+        </div>
+        <div class="socials"> 
+          <p><i class="fa-brands fa-facebook fa-xl"></i>Facebook</p>
+          <p><i class="fa-brands fa-instagram fa-xl"></i>Instagram</p>
+        </div>
+        <div class="payments">
+          <i class="fa-brands fa-paypal fa-2xl"></i>
+          <i class="fa-brands fa-cc-visa fa-2xl"></i>
+          <i class="fa-brands fa-cc-mastercard fa-2xl"></i>
+        </div>
+      </footer>
+</body>
+</html>
