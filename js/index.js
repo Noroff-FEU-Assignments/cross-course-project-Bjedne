@@ -1,4 +1,4 @@
-const url = "http://www.bjednanigans.no/wp-json/wc/store/products";
+const url = "https://www.bjednanigans.no/wp-json/wc/store/products";
 const corsEnabledUrl = "https://noroffcors.onrender.com/" + url;
 
 const indexProdContainer = document.querySelector(".gamelist");

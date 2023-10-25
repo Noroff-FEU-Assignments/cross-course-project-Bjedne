@@ -9,7 +9,7 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 async function forgeLegendInfo() {
-    const urlFL = "http://www.bjednanigans.no/wp-json/wc/store/products/" + id;
+    const urlFL = "https://www.bjednanigans.no/wp-json/wc/store/products/" + id;
     // const urlFL = "https://api.noroff.dev/api/v1/gamehub/" + id;
     const corsEnabledUrl = "https://noroffcors.onrender.com/" + urlFL;
 
