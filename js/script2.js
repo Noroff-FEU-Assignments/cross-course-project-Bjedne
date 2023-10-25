@@ -9,7 +9,7 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
 async function forgeLegendInfo() {
-    const urlFL = "http://www.bjednanigans.no/wp-json/wc/store/products" + id;
+    const urlFL = "http://www.bjednanigans.no/wp-json/wc/store/products/" + id;
     // const urlFL = "https://api.noroff.dev/api/v1/gamehub/" + id;
     const corsEnabledUrl = "https://noroffcors.onrender.com/" + urlFL;
 
@@ -24,16 +24,16 @@ productInfo.innerHTML = `<div class="loading-indicator"></div>`;
 async function productDetails() {
     try {
         const specProd = await forgeLegendInfo();
-        productImg.innerHTML = `<img src="${specProd.image}" alt="${specProd.name}" class="prodimg">`;
+        productImg.innerHTML = `<img src="${specProd.images[0].src}" alt="${specProd.name}" class="prodimg">`;
         productInfo.innerHTML = `<h1 class="fl-title">${specProd.name}</h1>
                                     <p class="description">${specProd.description}</p>
                                     <div class="product-info">
-                                        <p>Genre: ${specProd.genre} </p>
-                                        <p>Release date: ${specProd.released} </p>
-                                        <p>Rating: ${specProd.ageRating} </p>
+                                        <p>Genre: ${specProd.categories[2].name} </p>
+                                        <p>Release date: ${specProd.categories[1].name} </p>
+                                        <p>Rating: ${specProd.categories[0].name} </p>
                                     </div>
                                 <div>
-                                     <p class="euro">€${specProd.price}</p>
+                                     <p class="euro">NOK ${specProd.prices.price}</p>
                                 </div>
                                 <div>
                                     <button class="forge-button add-cart">Add to cart</button>
