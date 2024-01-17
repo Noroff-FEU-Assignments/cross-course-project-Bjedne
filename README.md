@@ -1,5 +1,7 @@
 # GameHub Cross Course Project
 
+![gamehub](https://github.com/NoroffFEU/portfolio-1-example/assets/126247097/16533794-39f4-4749-84e4-83b1ba986f5f)
+
 The purpose of this project was to make a shop for video games.
 
 ## Description
